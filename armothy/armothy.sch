@@ -726,4 +726,49 @@ F 3 "" H 7700 1050 50  0001 C CNN
 	1    7700 1050
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 5C3E540C
+P 5350 6750
+F 0 "J?" H 5377 6776 50  0000 L CNN
+F 1 "Pressure Sensor" H 5377 6685 50  0000 L CNN
+F 2 "" H 5350 6750 50  0001 C CNN
+F 3 "~" H 5350 6750 50  0001 C CNN
+	1    5350 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 6650 4950 6650
+Wire Wire Line
+	5150 6750 4950 6750
+Wire Wire Line
+	5150 6850 4950 6850
+$Comp
+L power:+5V #PWR?
+U 1 1 5C3EBAD5
+P 4950 6650
+F 0 "#PWR?" H 4950 6500 50  0001 C CNN
+F 1 "+5V" H 4965 6823 50  0000 C CNN
+F 2 "" H 4950 6650 50  0001 C CNN
+F 3 "" H 4950 6650 50  0001 C CNN
+	1    4950 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C3EBB63
+P 4950 6850
+F 0 "#PWR?" H 4950 6600 50  0001 C CNN
+F 1 "GND" H 4955 6677 50  0000 C CNN
+F 2 "" H 4950 6850 50  0001 C CNN
+F 3 "" H 4950 6850 50  0001 C CNN
+	1    4950 6850
+	1    0    0    -1  
+$EndComp
+Text Label 4950 6750 0    50   ~ 0
+PRESSURE
+Wire Wire Line
+	4800 4700 4350 4700
+Text Label 4350 4700 0    50   ~ 0
+PRESSURE
 $EndSCHEMATC
