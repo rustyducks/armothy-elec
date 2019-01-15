@@ -772,4 +772,120 @@ Wire Wire Line
 Connection ~ 7050 1100
 Wire Wire Line
 	7450 800  7700 800 
+$Comp
+L Connector:Conn_01x04_Female J?
+U 1 1 5C43D9F6
+P 1200 7250
+F 0 "J?" H 1094 6825 50  0000 C CNN
+F 1 "I2C" H 1094 6916 50  0000 C CNN
+F 2 "" H 1200 7250 50  0001 C CNN
+F 3 "~" H 1200 7250 50  0001 C CNN
+	1    1200 7250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J?
+U 1 1 5C43DB1F
+P 2850 7250
+F 0 "J?" H 2744 6825 50  0000 C CNN
+F 1 "UART" H 2744 6916 50  0000 C CNN
+F 2 "" H 2850 7250 50  0001 C CNN
+F 3 "~" H 2850 7250 50  0001 C CNN
+	1    2850 7250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1400 7050 1800 7050
+Wire Wire Line
+	1400 7150 1800 7150
+Wire Wire Line
+	3050 7050 3450 7050
+Wire Wire Line
+	3050 7150 3450 7150
+Wire Wire Line
+	1400 7350 1500 7350
+Wire Wire Line
+	1400 7250 1500 7250
+Wire Wire Line
+	3050 7250 3150 7250
+Wire Wire Line
+	3050 7350 3150 7350
+$Comp
+L power:+5V #PWR?
+U 1 1 5C45E30F
+P 1800 7050
+F 0 "#PWR?" H 1800 6900 50  0001 C CNN
+F 1 "+5V" H 1815 7223 50  0000 C CNN
+F 2 "" H 1800 7050 50  0001 C CNN
+F 3 "" H 1800 7050 50  0001 C CNN
+	1    1800 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C45E380
+P 1800 7150
+F 0 "#PWR?" H 1800 6900 50  0001 C CNN
+F 1 "GND" H 1805 6977 50  0000 C CNN
+F 2 "" H 1800 7150 50  0001 C CNN
+F 3 "" H 1800 7150 50  0001 C CNN
+	1    1800 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C45E3F1
+P 3450 7050
+F 0 "#PWR?" H 3450 6900 50  0001 C CNN
+F 1 "+5V" H 3465 7223 50  0000 C CNN
+F 2 "" H 3450 7050 50  0001 C CNN
+F 3 "" H 3450 7050 50  0001 C CNN
+	1    3450 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C45E462
+P 3450 7150
+F 0 "#PWR?" H 3450 6900 50  0001 C CNN
+F 1 "GND" H 3455 6977 50  0000 C CNN
+F 2 "" H 3450 7150 50  0001 C CNN
+F 3 "" H 3450 7150 50  0001 C CNN
+	1    3450 7150
+	1    0    0    -1  
+$EndComp
+Text Label 1500 7250 0    50   ~ 0
+SDA
+Text Label 1500 7350 0    50   ~ 0
+SDL
+Wire Wire Line
+	6800 3500 6900 3500
+Wire Wire Line
+	6800 3600 6900 3600
+Text Label 6900 3500 0    50   ~ 0
+SDA
+Text Label 6900 3600 0    50   ~ 0
+SDL
+Wire Wire Line
+	4800 3100 4700 3100
+Wire Wire Line
+	4800 3200 4700 3200
+Text Label 4700 3100 0    50   ~ 0
+TX
+Text Label 4700 3200 0    50   ~ 0
+RX
+Text Label 3150 7250 0    50   ~ 0
+TX
+Text Label 3150 7350 0    50   ~ 0
+RX
+Wire Notes Line
+	1100 6750 3600 6750
+Wire Notes Line
+	3600 6750 3600 7450
+Wire Notes Line
+	3600 7450 1100 7450
+Wire Notes Line
+	1100 7450 1100 6750
+Text Notes 2150 6750 0    50   ~ 0
+Interfaces
 $EndSCHEMATC
