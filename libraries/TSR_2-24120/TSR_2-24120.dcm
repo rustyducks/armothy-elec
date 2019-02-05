@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TSR_2-24120
+D Non-Isolated DC/DC Converters 15-36Vin 12V 2A SIP switching regulator
+K
+F https://assets.tracopower.com/20180205131340/TSR2/documents/tsr2-datasheet.pdf
+$ENDCMP
+#
+#End Doc Library
