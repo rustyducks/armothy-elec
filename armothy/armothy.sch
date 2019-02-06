@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:armothy-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -29,11 +30,11 @@ L power:GND #PWR?
 U 1 1 5C35007F
 P 4600 2700
 F 0 "#PWR?" H 4600 2450 50  0001 C CNN
-F 1 "GND" H 4605 2527 50  0000 C CNN
+F 1 "GND" V 4605 2527 50  0000 C CNN
 F 2 "" H 4600 2700 50  0001 C CNN
 F 3 "" H 4600 2700 50  0001 C CNN
 	1    4600 2700
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	4800 2700 4600 2700
@@ -312,10 +313,6 @@ Wire Wire Line
 Wire Wire Line
 	2450 5550 2800 5550
 Connection ~ 2450 5550
-Wire Wire Line
-	4400 5300 4800 5300
-Text Label 4400 5300 0    50   ~ 0
-VALVE_CTRL
 Text Label 2800 5550 0    50   ~ 0
 VALVE_CTRL
 Wire Wire Line
@@ -503,22 +500,12 @@ Wire Wire Line
 	4350 3900 4800 3900
 Wire Wire Line
 	4800 4000 4350 4000
-Wire Wire Line
-	4800 3800 4350 3800
-Wire Wire Line
-	4800 3700 4350 3700
-Text Label 4350 3700 0    50   ~ 0
-MOTOR_DIR
-Text Label 4350 3800 0    50   ~ 0
-MOTOR_PWM
 Text Label 4350 3900 0    50   ~ 0
 ENC_A
 Text Label 4350 4000 0    50   ~ 0
 ENC_B
 Wire Wire Line
 	4800 3300 4400 3300
-Text Label 4400 3300 0    50   ~ 0
-LIM_SWITCH
 $Comp
 L Connector:Conn_01x02_Female J1
 U 1 1 5C42D3EE
@@ -595,7 +582,7 @@ F 3 "http://www.tracopower.com/products/tsr1.pdf" H 6900 1550 50  0001 C CNN
 $EndComp
 Connection ~ 6900 1750
 Wire Wire Line
-	7300 1450 7550 1450
+	7300 1450 7450 1450
 $Comp
 L Connector:Conn_01x04_Female J?
 U 1 1 5C43D9F6
@@ -662,22 +649,6 @@ F 3 "" H 3100 7250 50  0001 C CNN
 	1    3100 7250
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6800 3500 6900 3500
-Wire Wire Line
-	6800 3600 6900 3600
-Text Label 6900 3500 0    50   ~ 0
-SDA
-Text Label 6900 3600 0    50   ~ 0
-SCL
-Wire Wire Line
-	4800 3100 4700 3100
-Wire Wire Line
-	4800 3200 4700 3200
-Text Label 4700 3100 0    50   ~ 0
-TX
-Text Label 4700 3200 0    50   ~ 0
-RX
 Wire Notes Line
 	1100 6750 3600 6750
 Wire Notes Line
@@ -816,4 +787,134 @@ Wire Notes Line
 	6200 6400 4700 6400
 Text Notes 5150 6400 0    50   ~ 0
 Pressure sensor
+Wire Wire Line
+	4800 5200 4400 5200
+Wire Wire Line
+	4800 5100 4400 5100
+Text Label 4400 5100 0    50   ~ 0
+SDA
+Text Label 4400 5200 0    50   ~ 0
+SCL
+Wire Wire Line
+	4800 2800 4650 2800
+Wire Wire Line
+	4800 2900 4650 2900
+Text Label 4650 2800 0    50   ~ 0
+RX
+Text Label 4650 2900 0    50   ~ 0
+TX
+Text Label 4400 3300 0    50   ~ 0
+VALVE_CTRL
+Wire Wire Line
+	4800 3700 4350 3700
+Wire Wire Line
+	4350 3800 4800 3800
+Text Label 4350 3800 0    50   ~ 0
+MOTOR_DIR
+Text Label 4350 3700 0    50   ~ 0
+MOTOR_PWM
+Wire Wire Line
+	4800 4900 4350 4900
+Text Label 4350 4900 0    50   ~ 0
+LIM_SWITCH
+$Comp
+L LED:WS2812B D?
+U 1 1 5C5D07B6
+P 9550 4300
+F 0 "D?" H 9891 4346 50  0000 L CNN
+F 1 "WS2812B" H 9891 4255 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 9600 4000 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 9650 3925 50  0001 L TNN
+	1    9550 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C5D0A49
+P 9550 4700
+F 0 "#PWR?" H 9550 4450 50  0001 C CNN
+F 1 "GND" H 9555 4527 50  0000 C CNN
+F 2 "" H 9550 4700 50  0001 C CNN
+F 3 "" H 9550 4700 50  0001 C CNN
+	1    9550 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C5D0ADA
+P 9550 3900
+F 0 "#PWR?" H 9550 3750 50  0001 C CNN
+F 1 "+5V" H 9565 4073 50  0000 C CNN
+F 2 "" H 9550 3900 50  0001 C CNN
+F 3 "" H 9550 3900 50  0001 C CNN
+	1    9550 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 4700 9550 4650
+Wire Wire Line
+	9550 4000 9550 3900
+Wire Wire Line
+	9250 4300 8900 4300
+Wire Wire Line
+	4800 3100 4400 3100
+Text Label 4400 3100 0    50   ~ 0
+RGB_LED
+Text Label 8900 4300 0    50   ~ 0
+RGB_LED
+$Comp
+L Device:C C?
+U 1 1 5C5DC5C7
+P 10400 4300
+F 0 "C?" H 10515 4346 50  0000 L CNN
+F 1 "100n" H 10515 4255 50  0000 L CNN
+F 2 "" H 10438 4150 50  0001 C CNN
+F 3 "~" H 10400 4300 50  0001 C CNN
+	1    10400 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 4000 10400 4000
+Wire Wire Line
+	10400 4000 10400 4150
+Connection ~ 9550 4000
+Wire Wire Line
+	9550 4650 10400 4650
+Wire Wire Line
+	10400 4650 10400 4450
+Connection ~ 9550 4650
+Wire Wire Line
+	9550 4650 9550 4600
+$Comp
+L Device:CP C?
+U 1 1 5C5E27E0
+P 7450 1650
+F 0 "C?" H 7568 1696 50  0000 L CNN
+F 1 "10u" H 7568 1605 50  0000 L CNN
+F 2 "" H 7488 1500 50  0001 C CNN
+F 3 "~" H 7450 1650 50  0001 C CNN
+	1    7450 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 1500 7450 1450
+Connection ~ 7450 1450
+Wire Wire Line
+	7450 1450 7550 1450
+Wire Wire Line
+	6900 1750 7400 1750
+Wire Wire Line
+	7400 1750 7400 1800
+Wire Wire Line
+	7400 1800 7450 1800
+Wire Notes Line
+	8800 3650 8800 4950
+Wire Notes Line
+	8800 4950 10800 4950
+Wire Notes Line
+	10800 4950 10800 3650
+Wire Notes Line
+	10800 3650 8800 3650
+Text Notes 9700 3650 0    50   ~ 0
+LED RGB
 $EndSCHEMATC
