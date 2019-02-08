@@ -1,0 +1,28 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model 22-03-5035
+#/250942/106773/2.36/3/4/Connector
+DEF 22-03-5035 J 0 30 Y Y 1 F N
+F0 "J" 650 300 50 H V L CNN
+F1 "22-03-5035" 650 200 50 H V L CNN
+F2 "SHDR3W70P0X250_1X3_990X490X590P" 650 100 50 H I L CNN
+F3 "http://www.molex.com/pdm_docs/sd/022035035_sd.pdf" 650 0 50 H I L CNN
+F4 "Header 2.5mm SPOX,WTB,vert, shrouded, 3w Molex SPOX Series, Series Number 5267, 2.5mm Pitch 3 Way 1 Row Straight PCB Header, Solder Termination, 3A" 650 -100 50 H I L CNN "Description"
+F5 "5.9" 650 -200 50 H I L CNN "Height"
+F6 "Molex" 650 -300 50 H I L CNN "Manufacturer_Name"
+F7 "22-03-5035" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "6878048P" 650 -500 50 H I L CNN "RS Part Number"
+F9 "http://uk.rs-online.com/web/p/products/6878048P" 650 -600 50 H I L CNN "RS Price/Stock"
+F10 "70248167" 650 -700 50 H I L CNN "Allied_Number"
+F11 "https://www.alliedelec.com/molex-incorporated-22-03-5035/70248167/" 650 -800 50 H I L CNN "Allied Price/Stock"
+F12 "538-22-03-5035" 650 -900 50 H I L CNN "Mouser Part Number"
+F13 "https://www.mouser.com/Search/Refine.aspx?Keyword=538-22-03-5035" 650 -1000 50 H I L CNN "Mouser Price/Stock"
+DRAW
+X 1 1 0 0 200 R 50 50 0 0 B
+X 2 2 0 -100 200 R 50 50 0 0 B
+X 3 3 0 -200 200 R 50 50 0 0 B
+P 5 0 1 6 200 100 600 100 600 -300 200 -300 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library
