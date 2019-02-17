@@ -4,4 +4,5 @@
   (lib (name TSR_2-24120)(type KiCad)(uri ${KIPRJMOD}/../libraries/modules/TSR_2-24120.pretty)(options "")(descr ""))
   (lib (name teensy)(type KiCad)(uri ${KIPRJMOD}/../libraries/modules/teensy.pretty)(options "")(descr ""))
   (lib (name leds)(type KiCad)(uri ${KIPRJMOD}/../libraries/modules/leds.pretty)(options "")(descr ""))
+  (lib (name mosfets)(type KiCad)(uri ${KIPRJMOD}/../libraries/modules/mosfets.pretty)(options "")(descr ""))
 )
