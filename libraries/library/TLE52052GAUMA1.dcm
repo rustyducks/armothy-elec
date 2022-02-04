@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TLE52052GAUMA1
+D Infineon TLE52052GAUMA1, BLDC DC Motor Driver, 40 V 5A 7-Pin, TO-263
+K
+F https://www.infineon.com/dgdl/Infineon-TLE5205_2-DS-v01_01-en.pdf?fileId=db3a30431f848401011fc747c7a0797f
+$ENDCMP
+#
+#End Doc Library

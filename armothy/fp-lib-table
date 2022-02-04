@@ -5,4 +5,5 @@
   (lib (name teensy)(type KiCad)(uri ${KIPRJMOD}/../libraries/modules/teensy.pretty)(options "")(descr ""))
   (lib (name leds)(type KiCad)(uri ${KIPRJMOD}/../libraries/modules/leds.pretty)(options "")(descr ""))
   (lib (name mosfets)(type KiCad)(uri ${KIPRJMOD}/../libraries/modules/mosfets.pretty)(options "")(descr ""))
+  (lib (name TLE5205)(type KiCad)(uri /home/fabien/elec/armothy-elec/libraries/modules/TLE5205.pretty)(options "")(descr ""))
 )

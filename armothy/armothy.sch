@@ -165,9 +165,7 @@ F 3 "" H 5050 6950 50  0001 C CNN
 $EndComp
 Text Label 4800 6750 0    50   ~ 0
 PRESSURE
-Wire Wire Line
-	5850 4700 5400 4700
-Text Label 5400 4700 0    50   ~ 0
+Text Label 8300 5100 2    50   ~ 0
 PRESSURE
 $Comp
 L power:GND #PWR014
@@ -318,7 +316,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 3800 5850 3800
 Text Label 5400 3800 0    50   ~ 0
-MOTORZ_A
+MOTORZ_B
 Wire Wire Line
 	5850 4900 5400 4900
 Text Label 5400 4900 0    50   ~ 0
@@ -328,7 +326,7 @@ L Device:CP C2
 U 1 1 5C5E27E0
 P 5900 1150
 F 0 "C2" V 5850 1000 50  0000 L CNN
-F 1 "10u" V 5750 1100 50  0000 L CNN
+F 1 "100u" V 5750 1100 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 5938 1000 50  0001 C CNN
 F 3 "~" H 5900 1150 50  0001 C CNN
 	1    5900 1150
@@ -400,12 +398,12 @@ VALVE_CTRL
 Text Label 2450 5450 0    50   ~ 0
 PUMP_CTRL
 Wire Wire Line
-	2000 3550 1400 3550
+	2450 3150 2850 3150
 Wire Wire Line
-	1400 3450 2000 3450
-Text Label 1400 3450 0    50   ~ 0
+	850  3350 1350 3350
+Text Label 850  3350 0    50   ~ 0
 MOTORZ_A
-Text Label 1400 3550 0    50   ~ 0
+Text Label 2850 3150 2    50   ~ 0
 MOTORZ_B
 NoConn ~ 5850 5300
 NoConn ~ 5850 5000
@@ -423,7 +421,7 @@ F 3 "" H 6850 3200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5400 3700 0    50   ~ 0
-MOTORZ_B
+MOTORZ_A
 Wire Wire Line
 	5850 5100 5400 5100
 Wire Wire Line
@@ -724,8 +722,6 @@ F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS712-Datasheet.ashx?
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3300 2500 3200 2500
-Wire Wire Line
 	3700 3100 3700 3150
 Wire Wire Line
 	3700 2300 3700 2250
@@ -847,69 +843,27 @@ Wire Wire Line
 Text Label 5400 4800 0    50   ~ 0
 Z_CURRENT
 $Comp
-L Driver_Motor:A4953_LJ U6
-U 1 1 5C89D163
-P 2400 3650
-F 0 "U6" H 2150 4200 50  0000 C CNN
-F 1 "A4953_LJ" H 2200 4100 50  0000 C CNN
-F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.35x2.35mm" H 2400 3100 50  0001 C CNN
-F 3 "www.allegromicro.com/~/media/Files/Datasheets/A4952-3-Datasheet.ashx?la=en" H 2100 4000 50  0001 C CNN
-	1    2400 3650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2000 3750 1900 3750
-$Comp
-L power:+5V #PWR0101
-U 1 1 5C6A7859
-P 1900 3750
-F 0 "#PWR0101" H 1900 3600 50  0001 C CNN
-F 1 "+5V" V 1915 3878 50  0000 L CNN
-F 2 "" H 1900 3750 50  0001 C CNN
-F 3 "" H 1900 3750 50  0001 C CNN
-	1    1900 3750
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR0106
 U 1 1 5C6A7959
-P 2400 4150
-F 0 "#PWR0106" H 2400 3900 50  0001 C CNN
-F 1 "GND" H 2405 3977 50  0000 C CNN
-F 2 "" H 2400 4150 50  0001 C CNN
-F 3 "" H 2400 4150 50  0001 C CNN
-	1    2400 4150
-	1    0    0    -1  
+P 1250 3450
+F 0 "#PWR0106" H 1250 3200 50  0001 C CNN
+F 1 "GND" H 1255 3277 50  0000 C CNN
+F 2 "" H 1250 3450 50  0001 C CNN
+F 3 "" H 1250 3450 50  0001 C CNN
+	1    1250 3450
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2400 4150 2400 4050
-Wire Wire Line
-	2400 4050 2500 4050
-Connection ~ 2400 4050
-Connection ~ 2500 4050
 $Comp
 L Device:C C8
 U 1 1 5C6F97D7
-P 2550 3000
-F 0 "C8" H 2665 3046 50  0000 L CNN
-F 1 "100n" H 2665 2955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2588 2850 50  0001 C CNN
-F 3 "~" H 2550 3000 50  0001 C CNN
-	1    2550 3000
+P 1900 3650
+F 0 "C8" H 2015 3696 50  0000 L CNN
+F 1 "100n" H 2015 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1938 3500 50  0001 C CNN
+F 3 "~" H 1900 3650 50  0001 C CNN
+	1    1900 3650
 	0    1    1    0   
 $EndComp
-Connection ~ 2400 3000
-Wire Wire Line
-	2400 3000 2400 3250
-Wire Wire Line
-	2700 3000 2850 3000
-Wire Wire Line
-	2850 3650 2800 3650
-Wire Wire Line
-	2850 3650 2850 4050
-Wire Wire Line
-	2500 4050 2850 4050
-Connection ~ 2850 3650
 $Comp
 L power:GND #PWR0107
 U 1 1 5C71B5B6
@@ -956,13 +910,13 @@ $EndComp
 $Comp
 L power:+12V #PWR0109
 U 1 1 5C75A313
-P 2400 2800
-F 0 "#PWR0109" H 2400 2650 50  0001 C CNN
-F 1 "+12V" H 2415 2973 50  0000 C CNN
-F 2 "" H 2400 2800 50  0001 C CNN
-F 3 "" H 2400 2800 50  0001 C CNN
-	1    2400 2800
-	1    0    0    -1  
+P 2750 3250
+F 0 "#PWR0109" H 2750 3100 50  0001 C CNN
+F 1 "+12V" H 2765 3423 50  0000 C CNN
+F 2 "" H 2750 3250 50  0001 C CNN
+F 3 "" H 2750 3250 50  0001 C CNN
+	1    2750 3250
+	0    1    1    0   
 $EndComp
 $Comp
 L power:+12V #PWR0110
@@ -1077,25 +1031,9 @@ F 3 "" H 1500 6750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2850 3000 2850 3650
-Wire Wire Line
 	5850 3000 5450 3000
 Wire Wire Line
 	5850 3100 5450 3100
-NoConn ~ 5850 3900
-NoConn ~ 5850 4000
-Wire Wire Line
-	2800 3550 4250 3550
-Wire Wire Line
-	2800 3450 3050 3450
-Wire Wire Line
-	3050 3450 3050 2900
-Wire Wire Line
-	3050 2900 3300 2900
-Wire Wire Line
-	3200 2500 3200 3450
-Wire Wire Line
-	3200 3450 4250 3450
 $Comp
 L power:GND #PWR0102
 U 1 1 5C7A28AA
@@ -1107,8 +1045,6 @@ F 3 "" H 9850 3150 50  0001 C CNN
 	1    9850 3150
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2400 2800 2400 3000
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5C7DCF0C
@@ -1122,17 +1058,6 @@ F 3 "~" H 8400 5000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7850 5000 8200 5000
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5C7E4C92
-P 7950 5100
-F 0 "TP2" V 7904 5288 50  0000 L CNN
-F 1 "TestPoint" V 7995 5288 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8150 5100 50  0001 C CNN
-F 3 "~" H 8150 5100 50  0001 C CNN
-	1    7950 5100
-	0    1    1    0   
-$EndComp
 $Comp
 L Connector:TestPoint TP4
 U 1 1 5C7E4CE8
@@ -1156,9 +1081,88 @@ F 3 "~" H 8150 5300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7850 5100 7950 5100
-Wire Wire Line
 	7850 5200 8200 5200
 Wire Wire Line
 	7950 5300 7850 5300
+$Comp
+L TLE52052GAUMA1:TLE52052GAUMA1 IC1
+U 1 1 5C78B9AD
+P 1350 3150
+F 0 "IC1" H 1900 3415 50  0000 C CNN
+F 1 "TLE52052GAUMA1" H 1900 3324 50  0000 C CNN
+F 2 "TLE5205:TLE52052GAUMA1" H 2300 3250 50  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/Infineon-TLE5205_2-DS-v01_01-en.pdf?fileId=db3a30431f848401011fc747c7a0797f" H 2300 3150 50  0001 L CNN
+F 4 "Infineon TLE52052GAUMA1, BLDC DC Motor Driver, 40 V 5A 7-Pin, TO-263" H 2300 3050 50  0001 L CNN "Description"
+F 5 "4" H 2300 2950 50  0001 L CNN "Height"
+F 6 "Infineon" H 2300 2850 50  0001 L CNN "Manufacturer_Name"
+F 7 "TLE52052GAUMA1" H 2300 2750 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "726-TLE52052GAUMA1" H 2300 2650 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=726-TLE52052GAUMA1" H 2300 2550 50  0001 L CNN "Mouser Price/Stock"
+F 10 "1107745P" H 2300 2450 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/1107745P" H 2300 2350 50  0001 L CNN "RS Price/Stock"
+	1    1350 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3250 2700 3250
+Wire Wire Line
+	1350 3450 1250 3450
+Wire Wire Line
+	2450 3350 3050 3350
+Wire Wire Line
+	1350 3450 1350 3650
+Wire Wire Line
+	1350 3650 1750 3650
+Connection ~ 1350 3450
+Wire Wire Line
+	2050 3650 2700 3650
+Wire Wire Line
+	2700 3650 2700 3250
+Connection ~ 2700 3250
+Wire Wire Line
+	2700 3250 2450 3250
+NoConn ~ 5850 3900
+Wire Wire Line
+	5850 4000 5400 4000
+Wire Wire Line
+	1350 3250 850  3250
+Text Label 850  3250 0    50   ~ 0
+MOTORZ_EF
+Text Label 5400 4000 0    50   ~ 0
+MOTORZ_EF
+Wire Wire Line
+	7850 5100 8300 5100
+Wire Wire Line
+	3250 3450 4250 3450
+Wire Wire Line
+	4250 3550 3250 3550
+Wire Wire Line
+	3250 3550 3250 4000
+Wire Wire Line
+	3250 4000 700  4000
+Wire Wire Line
+	700  4000 700  3150
+Wire Wire Line
+	700  3150 1350 3150
+Wire Wire Line
+	3050 2900 3050 3350
+Wire Wire Line
+	3050 2900 3300 2900
+Wire Wire Line
+	3250 3450 3250 2500
+Wire Wire Line
+	3250 2500 3300 2500
+$Comp
+L power:GND #PWR?
+U 1 1 5C88DA3D
+P 2550 3450
+F 0 "#PWR?" H 2550 3200 50  0001 C CNN
+F 1 "GND" H 2555 3277 50  0000 C CNN
+F 2 "" H 2550 3450 50  0001 C CNN
+F 3 "" H 2550 3450 50  0001 C CNN
+	1    2550 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2450 3450 2550 3450
 $EndSCHEMATC

@@ -5,4 +5,5 @@
   (lib (name LM2596)(type Legacy)(uri ${KIPRJMOD}/../libraries/library/LM2596.lib)(options "")(descr ""))
   (lib (name TSR_2-24120)(type Legacy)(uri ${KIPRJMOD}/../libraries/library/TSR_2-24120.lib)(options "")(descr ""))
   (lib (name IRLML6344)(type Legacy)(uri ${KIPRJMOD}/../libraries/library/IRLML6344.lib)(options "")(descr ""))
+  (lib (name TLE52052GAUMA1)(type Legacy)(uri ${KIPRJMOD}/../libraries/library/TLE52052GAUMA1.lib)(options "")(descr ""))
 )
